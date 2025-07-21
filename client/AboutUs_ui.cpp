@@ -127,7 +127,7 @@ void AboutUs::addProjectDescription()
 void AboutUs::addAvatarsAndShortInfo()
 {
     teamMembers = {
-        {"Nguyễn Khang Hy", "24127280", "UI Designer & Gmail Integration", "khanghy0604@gmail.com",
+        {"Nguyễn Khang Hy", "24127280", "UI Designer &", "khanghy0604@gmail.com",
          "https://github.com/nguyenkhanghy", "https://facebook.com/khanghy204", "hy.png"},
         {"Lê Đinh Nguyên Phong", "24127215", "System Developer & Socket Communication", "phong.opg@gmail.com",
          "https://github.com/46thanft", "https://www.facebook.com/phong.opg.2025", "phong.png"},

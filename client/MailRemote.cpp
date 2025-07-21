@@ -41,7 +41,7 @@ void MailCheckWorker::checkMail() {
         sendCommandToServer(req.subject, req.body, req.threadId, QString::fromStdString(req.subject));
 
         QNetworkAccessManager modifyManager;
-        QString url = QString("https://gmail.googleapis.com/gmail/v1/users/me/messages/%1/modify").arg(QString::fromStdString(req.threadId));
+        QString url = QString("https://gmail.googleapis.com/gmail/v1/users/me/messages/%1/modify").arg(QString::fromStdString(req.id));
         QNetworkRequest request{QUrl(url)};
         request.setRawHeader("Authorization", ("Bearer " + QString::fromStdString(gmail->getAccessToken())).toUtf8());
         request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
@@ -146,7 +146,7 @@ void MailCheckWorker::sendCommandToServer(const std::string& ip, const std::stri
         QEventLoop loop;
         QTimer timeoutTimer;
         timeoutTimer.setSingleShot(true);
-        timeoutTimer.start(30000); // Timeout 30s để nhận file lớn
+        timeoutTimer.start(25000); // Timeout 30s để nhận file lớn
 
         QObject::connect(socket, &QTcpSocket::readyRead, [&]() {
             response.append(socket->readAll());
