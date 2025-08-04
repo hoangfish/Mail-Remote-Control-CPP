@@ -91,7 +91,7 @@ The application allows the user to select **Gmail Remote** to connect with the G
 #### SendMail
 
 <figure>
-  <img src="./assets/sendmail.gif" alt="send mail page"/>
+  <img src="./assets/sendclient.gif" alt="send mail page"/>
   <figcaption>Mail demo page</figcaption>
 </figure>
 
