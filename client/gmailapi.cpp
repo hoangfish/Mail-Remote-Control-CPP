@@ -361,8 +361,8 @@ bool GmailAPI::authenticate(QTextEdit *logEdit)
         QTcpServer server;
         if (!isPortAvailable(port, logEdit))
         {
-            if (logEdit)
-                utils::log(logEdit, "❌ Cổng " + QString::number(port) + " không khả dụng. Vui lòng giải phóng cổng.");
+            // if (logEdit)
+            //     utils::log(logEdit, "❌ Cổng " + QString::number(port) + " không khả dụng. Vui lòng giải phóng cổng.");
             return false;
         }
 
@@ -372,8 +372,8 @@ bool GmailAPI::authenticate(QTextEdit *logEdit)
                 utils::log(logEdit, "❌ Lỗi lắng nghe cổng " + QString::number(port) + ": " + server.errorString());
             return false;
         }
-        if (logEdit)
-            utils::log(logEdit, "✅ Cổng " + QString::number(port) + " đã được lắng nghe thành công.");
+        // if (logEdit)
+        //     utils::log(logEdit, "✅ Cổng " + QString::number(port) + " đã được lắng nghe thành công.");
 
         QString redirectUri = QString("http://localhost:%1").arg(port);
 

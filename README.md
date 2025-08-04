@@ -109,7 +109,7 @@ Show information about the project and the members.
 ### Technology
 
 - **Framework**: Qt, CMake
-- **Backend**: C++
+- **Backend**: C++,SocketIO
 - **Frontend**: Qt Widgets, QML
 
 ### Features
