@@ -47,10 +47,10 @@
 
 This project is a **remote computer control system using Gmail**, built with C++ and Qt, in which:
 
-- **The user** sends a Gmail message to the fixed **client Gmail** (`phphuc2417@clc.fitus.edu.vn`).
-- **The client** receives the email, extracts the command from subject (server IP, e.g., `192.168.1.1`) and body (e.g., `ping`, `download_file`, `capture_photo`, `record_video`), and sends a JSON signal to the **server** via TCP socket (port 12345).
+- **The user** sends a Gmail message to the fixed **client Gmail** .
+- **The client** receives the email, extracts the command from subject (server IP, e.g., `192.168.1.1`) and body (e.g.), and sends a JSON signal to the **server** via TCP socket (port 12345).
 - **The server** executes the task and returns the result to the **client**.
-- **The client** sends the result back to the **user's Gmail** (`hoangphucpham1973@gmail.com`).
+- **The client** sends the result back to the **user's Gmail**.
 
 ### Demo
 
